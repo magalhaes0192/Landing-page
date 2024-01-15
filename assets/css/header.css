@@ -9,9 +9,7 @@ header {
 }
 
 .interface {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin: 0 auto;
     width: 1600px;
 }
 
@@ -24,11 +22,11 @@ header {
 }
 
 .flex-banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
     background-color: #FCDB00;
 }
+
+
 
 .flex {
     display: flex;
