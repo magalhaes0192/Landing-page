@@ -1,4 +1,4 @@
-$('.slide-banner').slick({
+$('.banner-content').slick({
     arrows: false,
     infinite: true
   });

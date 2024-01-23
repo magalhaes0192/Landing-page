@@ -1,146 +1,181 @@
-<html lang="PT-BR">
+<!DOCTYPE html>
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/header.css">
+    <!-- Estilo de css -->
     <link rel="stylesheet" href="assets/css/geral.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <script src="https://kit.fontawesome.com/00f5567b28.js" crossorigin="anonymous" defer></script>
-
-    <title>Landing Page</title>
+    <!-- Fim dos estilos -->
+    <title>Landing page</title>
 </head>
 
 <body>
+    <!-- Header -->
     <header>
-        <div class="flex">
-            <div class="interface">
+        <div class="container">
+            <div class="navbar">
                 <div class="logo">
                     <i class="fa-solid fa-fingerprint"></i>
                     <h1>tinyone</h1>
                 </div>
-                <div class="header-links">
+                <nav class="nav-menu">
                     <a href="#">Features</a>
                     <a href="#">Support</a>
                     <a href="#">Blog</a>
-                </div>
+                </nav>
+
+                <!-- Parte da nav mobile -->
                 <div class="btn-abrir-menu" id="btn-menu">
                     <i class="fa-solid fa-bars"></i>
                 </div>
-                <div class="header-links-mobile" id="menu-mobile">
+                <div class="navbar-mobile" id="menu-mobile">
                     <div class="btn-fechar">
                         <i class="fa-solid fa-x"></i>
                     </div>
-                    <div class="header-links-flex">
+                    <nav class="nav-menu-mobile">
                         <a href="#">Features</a>
                         <a href="#">Support</a>
                         <a href="#">Blog</a>
-                    </div>
+                    </nav>
                 </div>
                 <div class="overlay-menu" id="overlay-menu"></div>
+                <!-- Fim da parte mobile -->
+
+
             </div>
         </div>
     </header>
-    <!-- Section do banner -->
-    <section>
-        <div class="slide-banner">
-            <img src="https://dummyimage.com/1920x700/211f00/fff">
-            <img src="https://dummyimage.com/1920x700/000000/fff">
-            <img src="https://dummyimage.com/1920x700/03001f/fff">
-            <img src="https://dummyimage.com/1920x700/000000/fff">
-        </div>
-    </section>
+    <!-- Fim do header -->
 
-    <!-- section do grid-->
-    <section>
-        <div class="flex">
-            <div class="interface-grid">
-                <div class="title-grid">
+    <!-- main -->
+    <main>
+        <!-- Section do banner -->
+        <section>
+            <div class="banner-content">
+                <picture>
+                    <source srcset="assets/img/mobile.png" media="(max-width: 480px)" />
+                    <source srcset="assets/img/tablet.png" media="(max-width: 1200px)" />
+                    <img src="assets/img/desktop.png">
+                </picture>
+                <picture>
+                    <source srcset="assets/img/mobile.png" media="(max-width: 480px)" />
+                    <source srcset="assets/img/tablet.png" media="(max-width: 1200px)" />
+                    <img src="assets/img/desktop.png">
+                </picture>
+                <picture>
+                    <source srcset="assets/img/mobile.png" media="(max-width: 480px)" />
+                    <source srcset="assets/img/tablet.png" media="(max-width: 1200px)" />
+                    <img src="assets/img/desktop.png">
+                </picture>
+            </div>
+        </section>
+        <!-- Fim do banner -->
+
+        <!-- Section do grid-->
+        <section>
+            <div class="container">
+                <div class="grid-container">
                     <h1>Tinyone features</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam provident fuga ipsam iste atque
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam provident fuga ipsam iste
+                        atque
                         ipsa
-                        nostrum maiores totam saepe minus dolor quo tenetur at incidunt dicta consequatur, sit, pariatur
+                        nostrum maiores totam saepe minus dolor quo tenetur at incidunt dicta consequatur, sit,
+                        pariatur
                         et!
                     </p>
-                </div>
-                <div class="grid-layout">
-                    <div class="grid-item">
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                        <div class="item-text">
-                            <h2>Fully Responsive</h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore vel, molestias itaque
-                                alias, autem, magnam repudiandae vero optio deserunt in ad. Quisquam, magnam?
-                                Praesentium beatae, laborum repellat quae voluptates quod.</p>
+                    <div class="grid-content">
+                        <div class="grid-item">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <div class="item-text">
+                                <h2>Fully Responsive</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore vel, molestias
+                                    itaque
+                                    alias, autem, magnam repudiandae vero optio deserunt in ad.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="grid-item">
-                        <i class="fa-regular fa-lemon"></i>
-                        <div class="item-text">
-                            <h2>Fully Layered PSD</h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore vel, molestias itaque
-                                alias, autem, magnam repudiandae vero optio deserunt in ad. Quisquam, magnam?
-                                Praesentium beatae, laborum repellat quae voluptates quod.</p>
+                        <div class="grid-item">
+                            <i class="fa-regular fa-lemon"></i>
+                            <div class="item-text">
+                                <h2>Fully Layered PSD</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore vel, molestias
+                                    itaque
+                                    alias, autem, magnam repudiandae vero optio deserunt in ad.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="grid-item">
-                        <i class="fa-regular fa-folder"></i>
-                        <div class="item-text">
-                            <h2>Font Awesome Icons</h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore vel, molestias itaque
-                                alias, autem, magnam repudiandae vero optio deserunt in ad. Quisquam, magnam?
-                                Praesentium beatae, laborum repellat quae voluptates quod.</p>
+                        <div class="grid-item">
+                            <i class="fa-regular fa-folder"></i>
+                            <div class="item-text">
+                                <h2>Font Awesome Icons</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore vel, molestias
+                                    itaque
+                                    alias, autem, magnam repudiandae vero optio deserunt in ad.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="grid-item">
-                        <i class="fa-solid fa-code"></i>
-                        <div class="item-text">
-                            <h2>HTML & CSS</h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore vel, molestias itaque
-                                alias, autem, magnam repudiandae vero optio deserunt in ad. Quisquam, magnam?
-                                Praesentium beatae, laborum repellat quae voluptates quod.</p>
+                        <div class="grid-item">
+                            <i class="fa-solid fa-code"></i>
+                            <div class="item-text">
+                                <h2>HTML & CSS</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore vel, molestias
+                                    itaque
+                                    alias, autem, magnam repudiandae vero optio deserunt in ad.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="grid-item">
-                        <i class="fa-regular fa-envelope"></i>
-                        <div class="item-text">
-                            <h2>Email Template</h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore vel, molestias itaque
-                                alias, autem, magnam repudiandae vero optio deserunt in ad. Quisquam, magnam?
-                                Praesentium beatae, laborum repellat quae voluptates quod.</p>
+                        <div class="grid-item">
+                            <i class="fa-regular fa-envelope"></i>
+                            <div class="item-text">
+                                <h2>Email Template</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore vel, molestias
+                                    itaque
+                                    alias, autem, magnam repudiandae vero optio deserunt in ad.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="grid-item">
-                        <i class="fa-regular fa-bookmark"></i>
-                        <div class="item-text">
-                            <h2>Free to download</h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore vel, molestias itaque
-                                alias, autem, magnam repudiandae vero optio deserunt in ad. Quisquam, magnam?
-                                Praesentium beatae, laborum repellat quae voluptates quod.</p>
+                        <div class="grid-item">
+                            <i class="fa-regular fa-bookmark"></i>
+                            <div class="item-text">
+                                <h2>Free to download</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore vel, molestias
+                                    itaque
+                                    alias, autem, magnam repudiandae vero optio deserunt in ad.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <!-- Fim do grid -->
+    </main>
+    <!-- Fim do main -->
+
+    <!-- Footer -->
     <footer>
-        <div class="flex">
-            <div class="interface-grid">
-                <div class="footer-text">
-                    <h1>Keep in touch with us</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed optio recusandae
-                        numquam dolor nihil similique. Inventore nemo atque natus temporibus dolor, ipsam eum autem. Ex
-                        laborum rem dignissimos sit!</p>
-                </div>
-                <form action="" class="form">
-                    <input type="text" placeholder="Enter your email to updates" class="form-text">
-                    <button class="form-btn">SUBMIT</button>
+        <div class="container">
+            <div class="footer-container">
+                <h1>Keep in touch with us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sed optio recusandae
+                    numquam dolor nihil similique. Inventore nemo atque natus temporibus dolor, ipsam eum autem. Ex
+                    laborum rem dignissimos sit!</p>
+
+                <form action="" class="footer-form">
+                    <input type="text" placeholder="Enter your email to updates" class="footer-form-text">
+                    <button class="footer-form-btn">SUBMIT</button>
                 </form>
-                <div class="footer-icons">
+
+                <nav class="footer-icons">
                     <i class="fa-brands fa-square-facebook"></i>
                     <i class="fa-brands fa-square-twitter"></i>
                     <i class="fa-brands fa-google-plus-g"></i>
                     <i class="fa-brands fa-pinterest-p"></i>
-                </div>
+                </nav>
+
                 <div class="font-lists">
                     <div class="footer-adress">
                         <h5>HALOVIETNAM LTD</h5>
@@ -174,10 +209,19 @@
             </div>
         </div>
     </footer>
+    <!-- Fim do footer -->
+
+    <!-- Imports do JS -->
+    <script src="https://kit.fontawesome.com/00f5567b28.js" crossorigin="anonymous"></script>
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="/assets/js/menu.js"></script>
+
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="/assets/js/slide.js"></script>
+
+    <script src="assets/js/menu.js"></script>
+
+    <script src="assets/js/slide.js"></script>
+    <!-- Fim dos Imports -->
 </body>
 
 </html>
