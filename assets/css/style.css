@@ -1,21 +1,3 @@
-/* Estilizações gerais */
-header{
-    background-color: #FCDB00;
-}
-
-.container{
-    width: 1170px;
-    margin: 0 auto;
-}
-
-i{
-    font-size: 35px;
-}
-
-h1{
-    font-size: 35px;
-    font-weight: bold;
-}
 
 /* Estilizações do header */
 
@@ -29,7 +11,7 @@ h1{
 .logo{
     display: flex;
     justify-content: space-around;
-    width: 170px;
+    width: 190px;
     align-items: center;
 }
 
@@ -213,9 +195,6 @@ footer {
 /* Até 1200px */
 
 @media (max-width: 1200px){
-    .container{
-        width: 992px;
-    }
     .grid-item{
         width: 40%;
     }
@@ -227,9 +206,6 @@ footer {
 /* Até 1024px */
 
 @media (max-width:1024px){
-    .container{
-        width: 768px;
-    }
 
     .footer-container p{
         width: 85%;
@@ -253,9 +229,81 @@ footer {
 /* Até 768px */
 
 @media (max-width: 768px){
-    .container{
-        width: 700px;
+
+     /* Parte mobile do header */
+
+     .nav-menu{
+        display: none;
     }
+
+    .nav-menu-mobile{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-menu-mobile a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 22px;
+        font-weight: 300;
+        text-align: end;
+        width: 100%;
+        padding: 20px;
+        transition: .5s;
+    }
+
+    .nav-menu-mobile a:hover{
+        background-color: #FCDB00;
+        color: #000;
+        font-weight: bold;
+    }
+
+    .navbar-mobile{
+        width: 0%;
+        background-color: #000;
+        display: block;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        z-index: 9999;
+        transition: .5s;
+    }
+
+    .overlay-menu{
+        background-color: #0000009c;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        display: none;
+    }
+
+    .btn-abrir-menu{
+        display: block;
+    }
+
+    .navbar-mobile.abrir-menu{
+        width: 70%;
+    }
+
+    .navbar-mobile.abrir-menu~.overlay-menu{
+        display: block;
+    }
+
+    .navbar-mobile .btn-fechar{
+        padding: 20px 5%;
+    }
+
+    .navbar-mobile .btn-fechar i{
+        color: #FCDB00;
+        font-size: 30px;
+    }
+
+    /* Fim da parte mobile do header */
 
     .footer-container p{
         width: 91%;
@@ -277,85 +325,8 @@ footer {
 
 /* Até 701px */
 
-    @media (max-width: 701px){
-        .container{
-            width: 600px;
-        }
+    @media (max-width: 600px){
 
-        /* Parte mobile do header */
-
-        .nav-menu{
-            display: none;
-        }
-    
-        .nav-menu-mobile{
-            display: flex;
-            flex-direction: column;
-        }
-    
-        .nav-menu-mobile a{
-            text-decoration: none;
-            color: #fff;
-            font-size: 22px;
-            font-weight: 300;
-            text-align: end;
-            width: 100%;
-            padding: 20px;
-            transition: .5s;
-        }
-    
-        .nav-menu-mobile a:hover{
-            background-color: #FCDB00;
-            color: #000;
-            font-weight: bold;
-        }
-    
-        .navbar-mobile{
-            width: 0%;
-            background-color: #000;
-            display: block;
-            height: 100vh;
-            position: fixed;
-            top: 0;
-            right: 0;
-            overflow: hidden;
-            z-index: 9999;
-            transition: .5s;
-        }
-    
-        .overlay-menu{
-            background-color: #0000009c;
-            width: 100%;
-            height: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 999;
-            display: none;
-        }
-    
-        .btn-abrir-menu{
-            display: block;
-        }
-    
-        .navbar-mobile.abrir-menu{
-            width: 70%;
-        }
-    
-        .navbar-mobile.abrir-menu~.overlay-menu{
-            display: block;
-        }
-    
-        .navbar-mobile .btn-fechar{
-            padding: 20px 5%;
-        }
-    
-        .navbar-mobile .btn-fechar i{
-            color: #FCDB00;
-            font-size: 30px;
-        }
-
-        /* Fim da parte mobile do header */
 
         .footer-form{
             width: 100%;
@@ -380,9 +351,6 @@ footer {
 /* Até 500px */
 
 @media (max-width: 500px){
-    .container{
-        width: 350px;
-    }
 
     .grid-container p{
         font-size: 15px;
@@ -423,23 +391,10 @@ footer {
 
 /* Fim do 500px */
 
-/* Até 375px */
-
-@media (max-width: 375px){
-    .container{
-        width: 320px;
-    }
-
-}
-
-/* Fim do 375px */
 
 /* Até 320px */
 
 @media (max-width: 320px){
-    .container{
-        width: 300px;
-    }
 
     .grid-container h1{
         font-size: 30px;

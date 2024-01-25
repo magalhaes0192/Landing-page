@@ -1,52 +1,68 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+/* Font config */
+
+body, html {
+	font-family: Arial, Helvetica, sans-serif;
 }
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+/* header config */
+
+header {
+	background-color: #FCDB00;
 }
-body {
-	line-height: 1;
+
+/* h1 e i config */
+
+h1, i {
+	font-size: 35px;
+	font-weight: bold;
 }
-ol, ul {
-	list-style: none;
+
+
+/* Container config */
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
 }
-blockquote, q {
-	quotes: none;
+
+@media (max-width: 1200px) {
+	.container {
+		width: 992px;
+	}
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+@media (max-width:1024px) {
+	.container {
+		width: 768px;
+	}
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+@media (max-width: 768px) {
+	.container {
+		width: 580px;
+	}
 }
-img{
-    max-width: 100%;
-    display: block;
+
+@media (max-width: 600px){
+	.container{
+		width: 425px;
+	}
 }
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+
+@media (max-width: 500px){
+    .container{
+        width: 350px;
+    }
+}
+
+@media (max-width: 375px){
+    .container{
+        width: 320px;
+    }
+}
+
+@media (max-width: 320px){
+    .container{
+        width: 300px;
+    }
 }
